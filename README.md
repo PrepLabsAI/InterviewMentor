@@ -46,7 +46,7 @@ Or download the ZIP manually from GitHub.
 Open Claude Code and run:
 
 ```
-/plugin marketplace add <path_to_the_cloned_folder>/agents
+/plugin marketplace add <path_to_the_cloned_folder>
 ```
 
 Then start practicing with any skill:

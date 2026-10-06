@@ -1,5 +1,7 @@
 # 🎓 The Interview Mentor
 
+[![GitHub stars](https://img.shields.io/github/stars/PrepLabsAI/InterviewMentor?style=social)](https://github.com/PrepLabsAI/InterviewMentor/stargazers)
+
 > **AI-Powered Interview Preparation for Software Engineers**
 
 A collection of specialized AI skills for Claude Code and other agentic solutions to help you prepare for software engineering interviews at top tech companies.

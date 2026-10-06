@@ -12,7 +12,7 @@ Thank you for helping make interview preparation more accessible! This guide exp
    cp -r templates/skill-template agents/{category}/{skill-name}-interviewer
    ```
 3. **Fill in** the template (see Quality Standards below)
-4. **Test** your skill with `claude --plugin-dir ./agents/{category}`
+4. **Test** your skill by installing the plugin from your clone (see Testing Your Skill below)
 5. **Submit** a pull request
 
 ---
@@ -84,13 +84,20 @@ Every SKILL.md must include ALL of these sections:
 
 Before submitting a PR, test your skill:
 
-```bash
-# Load your skill category
-claude --plugin-dir ./agents/{category}
+Install the plugin from your clone. In Claude Code, from the folder that contains your clone:
 
-# Then ask Claude to use your skill
+```
+/plugin marketplace add ./InterviewMentor
+/plugin install coding-interview-agent@coding-interview-preparation-agents-marketplace
+```
+
+If it's already installed, run `/plugin marketplace update coding-interview-preparation-agents-marketplace` instead. Then restart Claude Code and ask for your skill:
+
+```
 > "Use the {skill-name}-interviewer skill and start my mock interview."
 ```
+
+If you created a new category folder under `agents/`, also add it to the `skills` list in `.claude-plugin/marketplace.json`, or its skills won't load.
 
 Verify that:
 - The interviewer starts Phase 1 immediately (no preamble)

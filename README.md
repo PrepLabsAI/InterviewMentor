@@ -33,23 +33,16 @@ A collection of specialized AI skills for Claude Code and other agentic solution
 
 [Start a mock interview here](https://socialistic.ai/en/skill/interview-mentor-57d074?utm_source=github&utm_medium=readme&utm_campaign=20250612-summer-interview-resume-skill-builders&utm_content=hyperlink) -- pick a topic and go, no install required.
 
-### Step 1: Download the Repository
+### Option 1: Install in Claude Code (Recommended)
 
-Clone the repository:
-
-```bash
-git clone https://github.com/PrepLabsAI/InterviewMentor.git
-```
-
-Or download the ZIP manually from GitHub.
-
-### Step 2: Use with Claude Code (Recommended)
-
-Open Claude Code and run:
+In Claude Code, run:
 
 ```
-/plugin marketplace add <path_to_the_cloned_folder>
+/plugin marketplace add PrepLabsAI/InterviewMentor
+/plugin install coding-interview-agent@coding-interview-preparation-agents-marketplace
 ```
+
+No cloning needed. All 44 interviewers are installed at once. Restart Claude Code if the skills don't show up right away.
 
 Then start practicing with any skill:
 
@@ -59,7 +52,7 @@ Then start practicing with any skill:
 
 > *"Help me prepare for a distributed systems interview."*
 
-The agent will take over and conduct a realistic mock interview.
+The agent will take over and conduct a realistic mock interview. To get new interviewers as they're added, run `/plugin marketplace update coding-interview-preparation-agents-marketplace`.
 
 ### Option 2: Use with Other AI Assistants
 

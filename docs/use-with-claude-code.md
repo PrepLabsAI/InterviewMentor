@@ -5,53 +5,36 @@ Claude Code provides the most integrated experience — skills load natively and
 ## Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed
-- This repository cloned locally
 
-## Setup
+## Install
 
-```bash
-git clone https://github.com/ps06756/The-Interview-Mentor.git
-cd The-Interview-Mentor
+In Claude Code, run:
+
+```
+/plugin marketplace add PrepLabsAI/InterviewMentor
+/plugin install coding-interview-agent@coding-interview-preparation-agents-marketplace
+```
+
+This installs all 44 interviewers. Restart Claude Code if the skills don't show up right away.
+
+To pick up new interviewers later:
+
+```
+/plugin marketplace update coding-interview-preparation-agents-marketplace
 ```
 
 ## Start an interview
 
-Load a skill category, then ask for a specific interviewer:
+Ask for a topic in plain language, or name a specific interviewer:
 
-```bash
-# System design (13 skills)
-claude --plugin-dir ./agents/systems-design
-> "Use the uber-interviewer skill and start my mock interview."
-
-# Coding - entry level (5 skills)
-claude --plugin-dir ./agents/swe-i
-> "Use the arrays-hashmaps-interviewer skill and interview me."
-
-# Coding - mid level (3 skills)
-claude --plugin-dir ./agents/swe-ii
-> "Use the dynamic-programming-interviewer skill."
-
-# Data engineering (3 skills)
-claude --plugin-dir ./agents/data-engineer
-
-# DevOps / SRE (3 skills)
-claude --plugin-dir ./agents/devops-sre
-
-# ML engineering (2 skills)
-claude --plugin-dir ./agents/ml-engineer
-
-# AI product management (3 skills)
-claude --plugin-dir ./agents/ai-pm
-
-# Debugging & incident response (6 skills)
-claude --plugin-dir ./agents/debugging
-
-# Behavioral (1 skill)
-claude --plugin-dir ./agents/behavioral
-
-# Meta-skills (1 skill)
-claude --plugin-dir ./agents/meta
 ```
+> "Help me prepare for a system design interview."
+> "Use the uber-interviewer skill and start my mock interview."
+> "Use the arrays-hashmaps-interviewer skill and interview me."
+> "Use the dynamic-programming-interviewer skill."
+```
+
+See the [Roster](../README.md#-roster) for every interviewer name.
 
 ## What to expect
 
@@ -63,18 +46,23 @@ Once loaded, the interviewer will:
 
 ## Tips
 
-- **One category at a time.** `--plugin-dir` loads all skills in that folder.
 - **Say the exact skill name** (e.g., "uber-interviewer") so Claude picks the right one.
 - **Ask for hints** naturally: "Can I get a hint?" or "I'm stuck, help me."
 - **Request the scorecard** at the end: "Give me my evaluation."
 
-## Alternative: Plugin Marketplace
+## Alternative: Install from a local clone
 
-You can also install via the marketplace:
+If you're editing skills and want to try your changes, install from your clone instead of GitHub:
+
+```bash
+git clone https://github.com/PrepLabsAI/InterviewMentor.git
+```
+
+Then in Claude Code:
 
 ```
-/plugin marketplace add <path-to-cloned-repo>
-/plugin install coding-interview-agent
+/plugin marketplace add ./InterviewMentor
+/plugin install coding-interview-agent@coding-interview-preparation-agents-marketplace
 ```
 
-Then start with: *"Help me prepare for a system design interview using coding-interview-agent."*
+After editing a skill, run `/plugin marketplace update coding-interview-preparation-agents-marketplace` and restart Claude Code to load the change.

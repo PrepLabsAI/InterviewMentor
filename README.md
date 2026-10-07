@@ -154,8 +154,16 @@ Each skill is a markdown file with clear instructions. Copy the content of any [
 | [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) | System Design | Hard | Geospatial indexing, real-time matching, concurrency |
 | [Design Twitter](./agents/systems-design/twitter-interviewer/SKILL.md) | System Design | Hard | Fan-out on write vs read, timeline ranking |
 | [Design a Search Engine](./agents/systems-design/search-engine-interviewer/SKILL.md) | System Design | Hard | Crawling, inverted index, TF-IDF, autocomplete |
-| [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) | Behavioral | All Levels | STAR method, ownership, cross-functional collaboration |
 | [Problem Decomposition](./agents/meta/problem-decomposition-interviewer/SKILL.md) | Meta | All Levels | How to approach any unknown problem — pattern recognition, structured thinking |
+
+### 🗣️ Behavioral (All Levels)
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) | Behavioral | All Levels | STAR method, ownership, cross-functional collaboration |
+| [Conflict & Collaboration](./agents/behavioral/conflict-collaboration-interviewer/SKILL.md) | Behavioral | All Levels | Disagreeing without blame, cross-functional friction, repairing relationships |
+| [Failure & Learning](./agents/behavioral/failure-learning-interviewer/SKILL.md) | Behavioral | All Levels | Owning mistakes, missed warning signs, the concrete habit you changed |
+| [Ownership & Impact](./agents/behavioral/ownership-impact-interviewer/SKILL.md) | Behavioral | All Levels | Going beyond assigned scope, quantifying impact, follow-through |
 
 ---
 
@@ -318,6 +326,7 @@ The-Mentor/
 ### Week 7+: Mock Interviews & Behavioral
 - [ ] Full mock interviews using combined skills
 - [ ] Leadership Principles (behavioral)
+- [ ] Conflict & Collaboration, Failure & Learning, Ownership & Impact (behavioral)
 - [ ] Problem Decomposition (meta skill)
 
 ---

@@ -121,6 +121,12 @@ Each skill is a markdown file with clear instructions. Copy the content of any [
 | [CI/CD Pipeline](./agents/devops-sre/cicd-pipeline-interviewer/SKILL.md) | DevOps | Medium | Blue-green, canary, database migrations in CI |
 | [Monitoring & Alerting](./agents/devops-sre/monitoring-alerting-interviewer/SKILL.md) | SRE | Medium | SLOs, burn-rate alerts, alert fatigue |
 
+#### Frontend
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [React & Browser Fundamentals](./agents/frontend/react-browser-interviewer/SKILL.md) | Frontend | Medium | Event loop, rendering, React hooks, performance, accessibility |
+
 #### Machine Learning Engineer
 
 | Skill | Topic | Difficulty | Description |

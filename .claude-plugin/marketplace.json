@@ -20,7 +20,8 @@
         "./agents/ai-pm",
         "./agents/debugging",
         "./agents/behavioral",
-        "./agents/meta"
+        "./agents/meta",
+        "./agents/frontend"
       ]
     }
   ]
